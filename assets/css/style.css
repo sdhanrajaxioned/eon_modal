@@ -308,7 +308,7 @@ nav ul li a:hover { color: #F2200A; }
 .new-tech { margin-bottom: 114px; }
 
 .blog {
-  margin-top: 99px;
+  padding-top: 99px;
   background-color: #F6F6F8;
 }
 
@@ -354,16 +354,57 @@ nav ul li a:hover { color: #F2200A; }
   font-size: 13px;
 }
 
-.logo-image img {
-  width: inherit;
+.logo-image img { width: inherit; }
+.blog .blog-post:last-child { padding-top: 110px; }
+.blog-cards { background-color: #F6F6F8; }
+
+.cards {
+  padding-top: 139px;
+  /* padding: 5px; */
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.blog .blog-post:last-child {
-  padding-top: 110px;
+.card-item { 
+  max-width: 282px; 
+  margin: 10px;
 }
 
-.blog .blog-content:last-child {
-  /* top: 20%; */
+.card-content {
+  height: 300px;
+  padding: 20px;
+  background-color: #FFF;
+}
+
+.card-content figure img { width: 25%;}
+
+/* .card-item figure img { height: inherit;} */
+
+.card-item figure {
+  height: 149px;
+  width: 282px;
+  overflow: hidden;
+}
+
+.card-content figure{
+  height: 40px
+}
+
+.card-content span { 
+  display: block;
+  padding-bottom: 5px;
+}
+
+.card-content a {
+  padding-bottom: 10px;
+  color: #1B6173;
+  font-size: 18px; 
+  text-decoration: underline;
+}
+
+.card-content p {
+  font-size: 16px;
+  line-height: 22px;
 }
 /*=================================
   main styling ends here
