@@ -224,7 +224,6 @@ nav ul li a:hover { color: #F2200A; }
   color: #959697;
   font-size: 15px;
 }
-
 /*=================================
   Header styling ends here
 =================================*/  
@@ -232,7 +231,37 @@ nav ul li a:hover { color: #F2200A; }
 /*=================================
   main styling starts here
 =================================*/
+.advertisement .wrapper {
+  width: 82%;
+  padding: 26px 0;
+  display: flex;
+  justify-content: space-between;
+}
 
+.advert {
+  color: #000;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+.advert::after {
+  content: "\3e";
+  padding-left: 10px;
+  color: #000;
+  font-family: "fontAwesome";
+  font-size: 10px;
+}
+
+.sponsored { 
+  display: flex;
+  align-items: center;
+}
+
+.sponsored p { 
+  font-size: 13px;
+  font-weight: 600;
+}
 
 
 
