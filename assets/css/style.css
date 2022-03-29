@@ -252,6 +252,8 @@ nav ul li a:hover { color: #F2200A; }
   text-decoration: underline;
 }
 
+.advert:hover { color: #F2200A;}
+
 .advert::after {
   content: "\3e";
   padding-left: 10px;
