@@ -103,9 +103,15 @@ li {
 .transition { transition: 1s all ease; }
 
 /*for wrapper*/
-.wrapper {
+.wrapper-header {
   max-width: 1350px;
   width: 86%; 
+  margin: 0 auto;
+}
+
+.wrapper-body{
+  max-width: 1350px;
+  width: 82%; 
   margin: 0 auto;
 }
 /*=================================
@@ -131,7 +137,7 @@ header h3 a {
   font-family: serif;
 }
 
-header .wrapper { display: flex; }
+header .wrapper-header { display: flex; }
 
 nav {
   padding: 13px 0;
@@ -231,11 +237,12 @@ nav ul li a:hover { color: #F2200A; }
 /*=================================
   main styling starts here
 =================================*/
-.advertisement .wrapper {
+.advertisement .wrapper-body {
   width: 82%;
-  padding: 26px 0;
+  padding: 16px 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .advert {
@@ -263,10 +270,44 @@ nav ul li a:hover { color: #F2200A; }
   font-weight: 600;
 }
 
+.banner {
+  background: url(/assets/Images/GettyImages-899829138.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 
+.banner-content {
+  max-width: 523px;
+  background-color: rgb(21,77,97, .6);
+  padding: 62px 18px;
+}
 
+.banner-content h1 {
+  color: #FDFDFD;
+  font-size: 90px;
+  line-height: 95px;
+  opacity: .9;
+}
 
+.banner-content h1::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  border-bottom: 2px solid #FDFDFD;
+  width: 25%;
+  display: block;
+}
 
+.banner-content p {
+  padding: 40px 1% 0 0;
+  color: #FDFDFD;
+  opacity: .8;
+}
+
+.new-tech {
+  margin-bottom: 114px;
+}
 
 
 /*=================================
