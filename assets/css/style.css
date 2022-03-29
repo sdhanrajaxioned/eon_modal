@@ -263,11 +263,13 @@ nav ul li a:hover { color: #F2200A; }
 .sponsored { 
   display: flex;
   align-items: center;
+  flex-basis: 20%;
 }
 
 .sponsored p { 
   font-size: 13px;
   font-weight: 600;
+  padding-right: 5%;
 }
 
 .banner {
@@ -349,6 +351,8 @@ nav ul li a:hover { color: #F2200A; }
   line-height: 35px;
 }
 
+.blog-content-link:hover { color: #F2200A;}
+
 .blog-content p:first-child {
   padding-bottom: 10px;
   font-size: 13px;
@@ -402,6 +406,8 @@ nav ul li a:hover { color: #F2200A; }
   text-decoration: underline;
 }
 
+.card-content a:hover { color: #F2200A ;}
+
 .card-content p {
   font-size: 16px;
   line-height: 22px;
@@ -413,13 +419,30 @@ nav ul li a:hover { color: #F2200A; }
 /*=================================
   footer styling starts here
 =================================*/ 
+footer {
+  border-top: 4px solid #F2200A;
+  background-color: #000;
+}
 
+footer .wrapper-header {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
 
+.footer-links li a,
+footer p {
+  color: #959697;
+}
 
+.footer-links li a{
+  font-size: 15px;
+  padding: 0 8px;
+}
 
-
-
-
+.footer-links li a:hover {
+  color: #F2200A;
+}
  /*=================================
   footer styling ends here
 =================================*/ 
