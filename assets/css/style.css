@@ -305,11 +305,66 @@ nav ul li a:hover { color: #F2200A; }
   opacity: .8;
 }
 
-.new-tech {
-  margin-bottom: 114px;
+.new-tech { margin-bottom: 114px; }
+
+.blog {
+  margin-top: 99px;
+  background-color: #F6F6F8;
 }
 
+.blog-post { 
+  display: flex; 
+  position: relative;
+}
 
+.blog-post figure { 
+  max-width: 833px;
+  max-height: 449px;
+}
+
+.blog-content {
+  min-height: 347px;
+  max-width: 590px;
+  padding: 30px;
+  position: absolute;
+  background-color: #FFF;
+}
+
+.content-1 {
+  left: 51%;
+  top: 5%;
+}
+
+.content-2 {
+  left: 51%;
+  top: 24%;
+}
+
+.blog-content-link { 
+  margin-right: 5%;
+  padding: 28px 0;
+  color: #1B6173; 
+  font-size: 28px;
+  text-decoration: underline;
+  line-height: 35px;
+}
+
+.blog-content p:first-child {
+  padding-bottom: 10px;
+  font-size: 13px;
+}
+
+.logo-image img {
+  width: inherit;
+}
+
+.blog .blog-post:last-child {
+  padding-top: 110px;
+}
+
+.blog .blog-content:last-child {
+  /* top: 20%; */
+}
 /*=================================
   main styling ends here
 =================================*/
