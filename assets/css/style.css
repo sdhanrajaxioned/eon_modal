@@ -249,6 +249,8 @@ nav ul li a:hover { color: #F2200A; }
   background-color: #383E42;
 }
 
+.search:focus { outline: none; }
+
 .search-btn {
   padding: 0;
   border: none;
