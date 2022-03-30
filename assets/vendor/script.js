@@ -6,39 +6,22 @@ $(document).ready(function () {
         $('body').toggleClass('hidden');
 
         $('.topics').click(function () {
-            $('.topics-dropdown').toggleClass('active');
-            if ($('.topics-dropdown').hasClass('active')) {
-                $('.topics-dropdown').parentsUntil('.wrapper-header').find('.nav-right').hide().parent().find('.topic-menu').siblings().hide();
-            } else {
-                $('.topics-dropdown').parentsUntil('.wrapper-header').find('.nav-right').show().parent().find('.topic-menu').siblings().show();
-            }
+            $('.topics-dropdown').slideToggle();
         })
 
         $('.more').click(function () {
-            $('.more-dropdown').toggleClass('active');
-            if ($('.more-dropdown').hasClass('active')) {
-                $('.more-dropdown').parentsUntil('.wrapper-header').find('.nav-right').hide().parent().find('.more-menu').siblings().hide();
-            }
-            else {
-                $('.more-dropdown').parentsUntil('.wrapper-header').find('.nav-right').show().parent().find('.more-menu').siblings().show();
-
-            }
+            $('.more-dropdown').slideToggle();
         })
 
         $('.register').click(function () {
-            $('.manage-subscription').toggleClass('active');
-            if ($('.manage-subscription').hasClass('active')) {
-                $('.manage-subscription').parentsUntil('.wrapper-header').find('.nav-left').hide().parent().find('.subscription').siblings().hide();
-            } else {
-                $('.manage-subscription').parentsUntil('.wrapper-header').find('.nav-left').show().parent().find('.subscription').siblings().show();
-            }
+            $('.manage-subscription').slideToggle();
         })
     })
 
     $('.modal-btn').click(function (e) {
-        var video_container = $(this).prev();
-        video_container.addClass('active')
-        var video = $(this).prev().find('video').get(0);
+        var video_container = $('.video-container');
+        video_container.addClass('active');
+        var video = $('video').get(0);
         if (video_container.hasClass('active')) {
             video.play()
             video.currentTime = 0;
