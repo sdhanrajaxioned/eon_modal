@@ -625,6 +625,19 @@ footer p {
     display: flex;
   }
 
+  /* .topics:hover + .topics-dropdown,
+  .more:hover + .more-dropdown,
+  .register:hover + .manage-subscription {
+    display: none;
+  } */
+
+  .topics-dropdown,
+  .more-dropdown,
+  .manage-subscription {
+    top: 100px;
+    align-items: center;
+  }
+
   nav { display: none; }
   nav.active {display: flex;}
   h3 {padding: 12px 0;}
