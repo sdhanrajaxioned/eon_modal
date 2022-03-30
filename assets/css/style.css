@@ -154,6 +154,7 @@ nav {
   display: none;
 }
 
+.modal-btn,
 .bar {text-indent: -9999px;}
 
 .bar {
@@ -382,6 +383,27 @@ nav ul li a:hover { color: #F2200A; }
   max-width: 282px; 
   margin: 10px;
 }
+
+.modal { position: relative; }
+
+.modal-btn {
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-btn::after {
+  content: "\f144";
+  color: #FFF ;
+  font-family: "fontAwesome";
+  font-size: 50px;
+  float: right;
+  text-indent: 0;
+}
+
 
 .card-content {
   height: 300px;
