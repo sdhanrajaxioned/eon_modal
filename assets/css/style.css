@@ -619,11 +619,11 @@ footer p {
     padding: 40px 0;
   }
 
-  .topics:hover + .topics-dropdown,
-  .more:hover + .more-dropdown,
-  .register:hover + .manage-subscription {
-  display: none;
-}
+  .topics-dropdown.active,
+  .more-dropdown.active,
+  .manage-subscription.active {
+    display: flex;
+  }
 
   nav { display: none; }
   nav.active {display: flex;}
