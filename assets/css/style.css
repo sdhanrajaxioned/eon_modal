@@ -411,7 +411,7 @@ nav ul li a:hover { color: #F2200A; }
   border: none;
   background: transparent;
   position: absolute;
-  top: 50%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
