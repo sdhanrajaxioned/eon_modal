@@ -319,7 +319,7 @@ nav ul li a:hover { color: #F2200A; }
 }
 
 .banner {
-  background: url(/assets/Images/GettyImages-899829138.jpg);
+  background: url(assets/Images/GettyImages-899829138.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
