@@ -189,6 +189,7 @@ nav {
   z-index: 9999;
 }
 
+
 .manage-subscription { top: 101%; }
 
 .modal-btn,
@@ -593,8 +594,14 @@ footer p {
 
 @media only screen and (max-width: 1128px) {
 
-.nav-left li { padding: 0 10px;}
-.nav-right li { padding: 0 10px;}
+.nav-left li { 
+  display: block;
+  padding: 0 10px;
+}
+.nav-right li { 
+  display: block;
+  padding: 0 10px; 
+}
 
 }  
 
@@ -634,6 +641,18 @@ footer p {
     align-items: center;
   }
 
+  .topics,
+  .subscription,
+  .more {
+    display: block;
+    text-align: center;
+  }
+
+  .more::after, 
+  .topics::after { 
+    padding-left: 10px;
+  }
+
   .nav-right { flex-direction: column; }
   .nav-right li a {padding: 20px 0;}
   .subscription::after { content: '';}
@@ -650,6 +669,27 @@ footer p {
     position: unset;
     min-height: auto;
   }
+
+  .topics-dropdown,
+.more-dropdown,
+.manage-subscription{
+  min-width: 160px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: unset;
+  top: 100%;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 9999;
+}
+
+.topics-dropdown.active li,
+.more-dropdown.active li,
+.manage-subscription.active li{ 
+  display: block;
+}
 
   .cards {
     padding-top: 60px;
