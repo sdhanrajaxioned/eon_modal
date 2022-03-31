@@ -43,6 +43,12 @@ $(document).ready(function () {
         video.currentTime = 0;
     })
 
-
-
+    $('.read-btn').click(function () {
+        $(this).parent().find('.read-more').fadeToggle('800');
+        if ($(this).text() === 'Read More') {
+            $(this).text('Read Less')
+        } else {
+            $(this).text('Read More')
+        }
+    })
 });
