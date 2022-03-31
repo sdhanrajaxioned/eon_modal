@@ -37,6 +37,14 @@ $(document).ready(function () {
                             video.get(0).currentTime = 0;
                         }
                     });
+                    $('.modal-close').click(function () {
+                        // var video_container = $(this).parent();
+                        video_container.removeClass('active');
+                        // var video = $(this).prev().get(0);
+                        video.get(0).pause();
+                        video.get(0).currentTime = 0;
+                    })
+
                 } else {
                     video.siblings('video').show();
                 }
@@ -44,13 +52,7 @@ $(document).ready(function () {
         }
     })
 
-    $('.modal-close').click(function () {
-        var video_container = $(this).parent();
-        video_container.removeClass('active');
-        var video = $(this).prev().get(0);
-        video.pause();
-        video.currentTime = 0;
-    })
+
 
     $('.read-btn').click(function () {
         $(this).parent().find('.read-more').fadeToggle('800');
