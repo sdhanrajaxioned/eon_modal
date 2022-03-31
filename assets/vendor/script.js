@@ -19,19 +19,28 @@ $(document).ready(function () {
     })
 
     $('.modal-btn').click(function (e) {
+        var modal_data = $(this).attr('data-modal');
         var video_container = $('.video-container');
         video_container.addClass('active');
-        var video = $('video').get(0);
+
         if (video_container.hasClass('active')) {
-            video.play()
-            video.currentTime = 0;
-            $(video_container).click(function (e) {
-                if (e.target === video_container.get(0)) {
-                    video_container.removeClass('active')
-                    video.pause();
-                    video.currentTime = 0;
+            $('video').each(function () {
+                var video = $(this);
+                if (video.attr('data-video') === modal_data) {
+                    video.siblings('video').hide();
+                    video.get(0).play()
+                    video.get(0).currentTime = 0
+                    $(video_container).click(function (e) {
+                        if (e.target === video_container.get(0)) {
+                            video_container.removeClass('active')
+                            video.get(0).pause();
+                            video.get(0).currentTime = 0;
+                        }
+                    });
+                } else {
+                    video.siblings('video').show();
                 }
-            });
+            })
         }
     })
 
