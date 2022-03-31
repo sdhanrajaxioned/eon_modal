@@ -6,7 +6,7 @@ $(document).ready(function () {
         $('body').toggleClass('hidden');
 
         $('.topics').click(function () {
-            $('.topics-dropdown').slideToggle();    
+            $('.topics-dropdown').slideToggle();
         })
 
         $('.more').click(function () {
